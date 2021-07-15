@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.attribution { font-size: 1rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.flex-luxury, .flex-sedan, .flex-suv {
+    padding: 3rem 2rem;
+}
+.flex-sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+.sedan {
+    color:hsl(31, 77%, 52%);
+}
+.flex-suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.suv {
+    color:hsl(184, 100%, 22%);
+}
+.flex-luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury {
+    color:hsl(179, 100%, 13%);
+}
+h2 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8rem;
+}
+button {
+    background-color: hsl(0, 0%, 95%);
+}
+a:link, a:visited {
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.6rem 1rem;
+    display: inline-block;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+a:hover, a:active {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+@media only screen and (min-width: 600px) {
+    .flex-luxury, .flex-sedan, .flex-suv {
+        padding: 3rem 4rem;
+    }
+    .flex-container {
+        margin: 3rem 4rem;
+}
+@media only screen and (min-width: 992px) {
+    .flex-container {
+        flex-direction: row;
+        max-width: 900px;
+        margin: 8rem auto;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .flex-container {
+        flex-direction: row;
+        max-width: 1100px;
+        margin: 10rem auto;
+    }
+}
